@@ -56,10 +56,6 @@ Create a 3-day Singapore itinerary within my INR 60,000 budget. Use the knowledg
 
 
 ## Question Samples 
-Ques1. - where is Singapore located ? 
-Ques2. - What are the essential information for Singapore Travel ?
-Ques3. - Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
-
 ### MCP
 #### Currency
 Ques1 - How much is 200 SGD in INR? 
@@ -72,7 +68,6 @@ Ques2 - What are the essential information for Singapore Travel ?
 
 ### Combine MCP + RAG 
 Ques1 - Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
-Ques2 - Create a 3-day Singapore itinerary within my INR 60,000 budget. Use the knowledge base for destination facts and MCP data for current weather, prices, and availability. Do not guess missing information. Clearly separate information from your suggestions and include sources where available.
 
 ### Conversational 
 
