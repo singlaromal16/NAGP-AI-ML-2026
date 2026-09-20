@@ -92,27 +92,3 @@ async def ask(data: Question):
 
 if __name__ == "__main__":
     uvicorn.run(fastApiApp, host="127.0.0.1", port=8000)
-
-
-#     while True:
-#         question = input("You: ")
-
-#         if question.lower() in ["exit", "quit"]:
-#             break
-
-#         try:
-#             result = await agent.ainvoke({
-#                 "messages": [
-#                     {"role": "user", "content": question}
-#                 ]
-#             })
-
-#             print(
-#                 f"AI: {result['messages'][-1].content}\n"
-#             )
-#         except Exception as e:
-#             print(f"Error: {str(e)}\n")
-
-
-# if __name__ == "__main__":
-#     asyncio.run(app())

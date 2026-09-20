@@ -85,16 +85,3 @@ def singapore_rag(question: str) -> str:
         return result.message.content
 
     return str(result)
-
-#  ------------------- Removed ------------------
-# ---------------------------------------------------------------------------
-# 6. Interactive Query Loop
-# Ask the user for a question and run it through the full RAG chain.
-# (The while-loop version is commented out below for single-shot testing.)
-# ---------------------------------------------------------------------------
-
-#while True:
-# question = input("\nEnter your question (or 'quit' to exit): ")
-# # if question.lower() == "quit":
-# #     break
-# print("\nAnswer:", chain.invoke(question))
