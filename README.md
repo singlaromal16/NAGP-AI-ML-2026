@@ -1,43 +1,46 @@
-## MCP (Model context Provider)
+## Git Repo Link 
+https://github.com/singlaromal16/NAGP-AI-ML-2026
 
+## Video Link
+
+## MCP (Model context Provider)
+MCP is used to access current information of weather and currency.
 ### Created 2 MCP tools 
 1. Weather MCP Tool - weather_mcp_server.py
 2. Currency MCP Tool - currency_mcp_server.py
-
-### Test your MCP server
-1. uv run python weather_mcp_server.py
-2. uv run python currency_mcp_server.py
 
 ## RAG (Retrival Augmentation Generation) 
 1. main.py file contains RAG implementation.
 2. Using Windows compatible LLM - `Ollama`
 3. Model - `llama3.2`
 4. vector store - `chroma`
-5. 
 
 ## Combine both RAG and MCP
-    mcp_tools = await client.get_tools()
+RAG and MCP can be combined to provide a more better result
 
-    tools = [singapore_rag] + mcp_tools
+## RAG Workflow
+#### Chunking in RAG
+Raw documentation -> Chunking -> Embedding -> Vector Store
 
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-3.6-flash",
-    )
+#### Inference With RAG
+User -> Prompt related travel -> Singapore Knowledge Base -> AI generated answer
 
-## Architecture
-### RAG Flow
+## Setup instruction 
+
+1. git clone https://github.com/singlaromal16/NAGP-AI-ML-2026
+2. cd travel_planning_assistant
+3. Install dependencies mentioned in requirements.txt
+4. Create .env file and add `GOOGLE API KEY`
+5. Run application
+`python app.py`
+6. Open chat UI interface enter url http://127.0.0.1:8000/
+7. Example Question - 
+Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
+
 
 ## Question Samples 
 Ques1. - where is Singapore located ? 
 Ques2. - What are the essential information for Singapore Travel ?
 Ques3. - Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
-Ques4. - 
-
-## To run the application and ask question
-1. python app.py
-2. To open chat interface UI - http://127.0.0.1:8000/
-
-## Prompt Engineering
-eg: Create a three-day Singapore itinerary for next week and adjust it according to the weather. I have INR 60,000.
 
 
