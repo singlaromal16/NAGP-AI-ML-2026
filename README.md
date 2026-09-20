@@ -37,10 +37,45 @@ User -> Prompt related travel -> Singapore Knowledge Base -> AI generated answer
 7. Example Question - 
 Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
 
+## Prompt Engineering
+
+The prompt is designed to make the travel assistant provide reliable and personalized recommendations. It includes
+
+1.	Retrieved Knowledge Base Content
+It uses retrieved knowledge base content for destination facts. It is covering major attraction and neighbourhood. Food and local experiences and indoor and outdoor activity suggestions.
+
+2.	MCP Tool for current information 
+Create two MCP tool. One for weather and another for currency.
+It prefer current tool data over older or static information. 
+
+3.	Handle Missing Information
+If information is not available then clearly state “Information is not available from the sources”
+
+`Example:`
+Create a 3-day Singapore itinerary within my INR 60,000 budget. Use the knowledge base for destination facts and MCP data for current weather, prices, and availability. Do not guess missing information. Clearly separate information from your suggestions and include sources where available.
+
 
 ## Question Samples 
 Ques1. - where is Singapore located ? 
 Ques2. - What are the essential information for Singapore Travel ?
 Ques3. - Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
 
+### MCP
+#### Currency
+Ques1 - How much is 200 SGD in INR? 
+#### Weather
+Ques2 - Should I plan indoor or outdoor activities tomorrow? 
+
+### RAG
+Ques1 - What are the must-visit attractions in Singapore? 
+Ques2 - What are the essential information for Singapore Travel ?
+
+### Combine MCP + RAG 
+Ques1 - Plan a three-day trip to Singapore and adjust the activities based on the weather forecast.
+Ques2 - Create a 3-day Singapore itinerary within my INR 60,000 budget. Use the knowledge base for destination facts and MCP data for current weather, prices, and availability. Do not guess missing information. Clearly separate information from your suggestions and include sources where available.
+
+### Conversational 
+
+Ques1 - I am planning a 3-day trip to Singapore with a budget of ₹60,000. I like museums.
+Ques2 - Make the second day more relaxed.
 

@@ -40,7 +40,7 @@ async def initialize_agent():
     tools = [singapore_rag] + mcp_tools
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-3.6-flash",
+        model="gemini-3.7-flash",
     )
 
     agent = create_agent(
