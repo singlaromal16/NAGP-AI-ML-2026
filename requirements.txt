@@ -1,0 +1,22 @@
+langchain_mcp_adapters
+langchain_google_genai
+langchain
+mcp.server.fastmcp
+httpx
+asyncio
+dotenv
+uv
+
+# ---------
+langchain_community
+langchain_text_splitters
+langchain_huggingface
+langchain_chroma
+langchain_core
+sentence_transformers
+unstrucuted
+Ollama
+pypdf
+fastapi 
+pydantic
+uvicorn
