@@ -1,3 +1,4 @@
+# Combining RAG and MCP for a Travel Planning Assistant.
 import asyncio
 from fastapi.responses import FileResponse
 from langchain_mcp_adapters.client import MultiServerMCPClient
